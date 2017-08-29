@@ -11,7 +11,7 @@ int main()
 	}
 	for(i=0;i<n;i++)
 	{
-		for(j=1;j<n-1;j++)
+		for(j=0;j<n-i-1;j++)
 		{
 			if(a[j-1]>a[j])
 			//a[j]=(a[j+1]+a[j])-(a[j+1]=a[j]);
@@ -20,8 +20,8 @@ int main()
 			a[j-1]=temp;
 		}
 	}
-		for(j=0;j<n;j++)
-	printf("%d",a[j]);
+		for(i=0;i<n;i++)
+	printf("%d",a[i]);
 	
 	
 	return 0;
