@@ -10,13 +10,16 @@ class fact
 			{
 				cout<<"enter the value of n :";
 				cin>>n;
+				
+			}
+			output()
+			{
+				
 				for(i=1;i<=n;i++)
 				{
 					f=f*i;
+					//cout<<"\n";
 				}
-			}
-			set()
-			{
 				cout<<"factorial="<<f;
 				
 			}
@@ -24,8 +27,8 @@ class fact
 };
 int main()
 {
-	fact s;
-	s.getdata();
-	s.set();
+	fact k;
+	k.getdata();
+	k.output();
 	return 0;
 }
