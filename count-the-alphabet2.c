@@ -5,7 +5,7 @@
    int  i,c[26] = {0};
  
    printf("Enter a string\n");
-   gets(s);
+   scanf("%s",s);
  
    for(i=0;s[i];i++)
    {
