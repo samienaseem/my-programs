@@ -12,10 +12,10 @@ int main()
 	 	for(j=0;j<=n;j++)
 	 	 {
 	 	 	
-	 		if(i+j==n/2||i-j==n/2||j-i==n/2||i+j==(n/2)*3)
+	 		if(i+j>=n/2&&i-j<=n/2&&j-i<=n/2&&i+j<=(n/2)*3)
 	 		{
 	 		//	sleep(1);
-	 			printf("##****************");
+	 			printf("S");
 	 			
 			 }
 			 else
