@@ -46,16 +46,19 @@ int main()
 	}
 	else
 	{
-	//	printf("not");
+		printf("not");
+		break;
 	}
+	sum=0;
+	sum1=0;
 }
 if(flag!=0)
 {
 	printf("square magic matrix");
 }
-else
+/*else
 {
 	printf("not square magic matrix");
-}
+}*/
 	
 }
