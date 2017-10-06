@@ -18,13 +18,13 @@ int main()
 				temp=a[j-m];
 				a[j-m]=a[j];
 				a[j]=temp;
-				for(k=j-m;k>=0;k--)
+				for(k=(j-m)-m;k>=0;k--)
 				{
-					if(a[k-m]>=a[k])
+					if(a[k]>=a[k+m])
 					{
-						temp=a[k-m];
-						a[k-m]=a[k];
-						a[k]=temp;
+						temp=a[k];
+						a[k]=a[k+m];
+						a[k+m]=temp;
 					}
 				}
 			}
