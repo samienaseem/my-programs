@@ -4,12 +4,14 @@ class cart
 {
 	char itemname[30];
 	int quantity;
+	int price;
 	
 	public:
 	cart()
 	{
 		itemname[0]='\0';
 		quantity=0;
+		price=0;
 	}
 	void input()
 	{
@@ -17,10 +19,13 @@ class cart
 		cin>>itemname;
 		cout<<"enter the quantity\n";
 		cin>>quantity;
+		cout<<"enter price of items\n";
+		cin>>price;
 	}
 	void output()
 	{
-		cout<<itemname<<"\n"<<"	"<<quantity<<"\n";
+		price=price*quantity;
+		cout<<itemname<<"		"<<quantity<<"		"<<price<<"\n";
 	}
 
 	
@@ -42,8 +47,12 @@ int main()
 				i++;
 				break;
 			case 2:
+				cout<<"-----------------------------------------\n";
+				cout<<"items         quantity         price \n";
+				cout<<"------------------------------------------\n";
 				for(j=0;j<i;j++)
 				 s[j].output();
+				cout<<"==========================================\n\n";
 		}
 	
 	}while(n<=2);
